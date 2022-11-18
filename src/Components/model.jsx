@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import { Dialog, DialogContent, TextField, Box, Button, Typography, styled } from '@mui/material';
+import { Dialog, DialogContent, TextField, Box, Button, Typography } from '@mui/material';
 
-
-
-const Component = styled(DialogContent)`
-    height: 70vh;
-    width: 90vh;
-    padding: 0;
-    padding-top: 0;
-`;
 const LoginDialog = ({ open,setOpen }) => {
     const handleClose = () => {
         setOpen(false);
@@ -18,7 +10,7 @@ const LoginDialog = ({ open,setOpen }) => {
 
     return (
         <Dialog open={open} onClose={handleClose} sx={{ '& .MuiBackdrop-root': { backgroundColor: 'transparent' } }} >
-            <Component>
+            <DialogContent className="cd">
               <h3>Basic Model</h3>
               <hr></hr>
               <div className="md">
@@ -32,7 +24,7 @@ const LoginDialog = ({ open,setOpen }) => {
                     <button>ok</button>
               </div>
               </div>
-            </Component>
+            </DialogContent>
                 
         </Dialog>
     )

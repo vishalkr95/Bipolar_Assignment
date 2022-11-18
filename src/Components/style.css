@@ -24,6 +24,12 @@ img{
     padding-left: 20px;
     
 }
+.cd{
+    height: 70vh;
+    width: 90vh;
+    padding: 0;
+    padding-top: 0;
+}
 .details p{
     color: gray;
     margin: 0px;

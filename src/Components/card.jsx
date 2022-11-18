@@ -1,7 +1,4 @@
 import React,{useState,useEffect} from 'react';
-
-import {styled } from '@mui/material';
-import {makeStyles} from '@mui/styles';
 import './style.css'
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
